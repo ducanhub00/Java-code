@@ -8,8 +8,8 @@ public class App {
         xuatMang(a, n);
         System.out.print("Nhap so can tim kiem x = "); 
         int x = Integer.parseInt(scan.nextLine());
-        boolean found = linearSearch(a, x);
-        if(found) {
+        int index = linearSearch1(a, x);
+        if(index != -1) {
             System.out.println("Tim thay x = " + x + " trong mang");
         } else {
             System.out.println("Khong tim thay x = " + x + " trong mang");
