@@ -41,6 +41,15 @@ public class App {
         System.out.println("\n");
     }
 
+    public static int linearSearch1(int a[], int x) {
+        for (int i = 0; i < a.length; ++i) {
+            if(a[i] == x) {
+                return i;
+            }
+        }
+        return -1; // khong tim thay
+    }
+
     public static boolean linearSearch(int a[], int x) {
         int n = a.length;
         int i = 0;
