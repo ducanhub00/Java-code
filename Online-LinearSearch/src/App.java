@@ -8,7 +8,7 @@ public class App {
         xuatMang(a, n);
         System.out.print("Nhap so can tim kiem x = "); 
         int x = Integer.parseInt(scan.nextLine());
-        boolean found = binarySearch(a, x);
+        boolean found = binarySearch(a, x); // muon thuc hien binarySearch mang phai dc sap xep tang hoac giam dan
         if(found) {
             System.out.println("Tim thay x = " + x + " trong mang");
         } else {
