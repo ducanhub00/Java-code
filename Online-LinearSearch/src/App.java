@@ -14,12 +14,12 @@ public class App {
         } else {
             System.out.println("Khong tim thay x = " + x + " trong mang");
         }
-        // int index = linearSearch1(a, x);
-        // if(index != -1) {
-        //     System.out.println("Tim thay x = " + x + " trong mang");
-        // } else {
-        //     System.out.println("Khong tim thay x = " + x + " trong mang");
-        // }
+        int index = binarySearch1(a, x); // dung int trong binarySearch
+        if(index != -1) {
+            System.out.println("Tim thay x = " + x + " tai index = " + index);
+        } else {
+            System.out.println("Khong tim thay x = " + x + " trong mang");
+        }
     }
 
     public static int nhapN(Scanner scan) {
