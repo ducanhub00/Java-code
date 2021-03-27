@@ -78,9 +78,9 @@ public class App {
                 left = mid + 1;
             } else {
                 right = mid - 1;
-            } while(left <= right);
-            return -1;
-        }
+            }
+        } while(left <= right);
+        return -1;
     }
     /* End */
     /* End */
