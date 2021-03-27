@@ -47,6 +47,7 @@ public class App {
         System.out.println("\n");
     }
     /* Binary search */
+    /* Cach 1 dung boolean */
     public static boolean binarySearch(int a[], int x) {
         int left = 0;
         int right = a.length - 1;
@@ -63,6 +64,25 @@ public class App {
         } while(left <= right);
         return false;
     }
+    /* End */
+    /* Cach 2 dung int */
+    public static int binarySearch1(int a[], int x) {
+        int left = 0;
+        int right = a.length - 1;
+        int mid;
+        do {
+            mid = (left + right) / 2;
+            if(a[mid] == x) {
+                return mid;
+            } else if(a[mid] < x) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            } while(left <= right);
+            return -1;
+        }
+    }
+    /* End */
     /* End */
 
     public static int linearSearch1(int a[], int x) {
