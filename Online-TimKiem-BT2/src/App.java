@@ -35,14 +35,14 @@ public class App {
     }
 
     public static void lietKe(int a[]) {
-        int indexMin = -1;
+        int indexMin = -1; // chua tim thay
         for(int i = 0; i < a.length; ++i) {
             if(a[i] < 0) {
-                indexMin = i;
+                indexMin = i; // da tim thay 
                 break;
             }
         }
-        if(indexMin != -1) {
+        if(indexMin != -1) { // neu mang co so chan
             for(int i = indexMin + 1; i < a.length; ++i) {
                 if(a[i] < a[indexMin]) {
                     indexMin = i;
