@@ -8,9 +8,15 @@ public class App {
         xuatMang(a, n);
         System.out.print("Nhap so can tim kiem x = "); 
         int x = Integer.parseInt(scan.nextLine());
-        int index = linearSearch1(a, x);
-        if(index != -1) {
+        boolean found = binarySearch(a, x); // muon thuc hien binarySearch mang phai dc sap xep tang hoac giam dan
+        if(found) {
             System.out.println("Tim thay x = " + x + " trong mang");
+        } else {
+            System.out.println("Khong tim thay x = " + x + " trong mang");
+        }
+        int index = binarySearch1(a, x); // dung int trong binarySearch
+        if(index != -1) {
+            System.out.println("Tim thay x = " + x + " tai index = " + index);
         } else {
             System.out.println("Khong tim thay x = " + x + " trong mang");
         }
@@ -40,6 +46,44 @@ public class App {
         }
         System.out.println("\n");
     }
+    /* Binary search */
+    /* Cach 1 dung boolean */
+    public static boolean binarySearch(int a[], int x) {
+        int left = 0;
+        int right = a.length - 1;
+        int mid;
+        do {
+            mid = (right + left) / 2;
+            if(a[mid] == x) {
+                return true; // tim thay
+            } else if(a[mid] < x) {
+                left = mid + 1; // x nam o ben phai
+            } else {
+                right = mid - 1;
+            }
+        } while(left <= right);
+        return false;
+    }
+    /* End */
+    /* Cach 2 dung int */
+    public static int binarySearch1(int a[], int x) {
+        int left = 0;
+        int right = a.length - 1;
+        int mid;
+        do {
+            mid = (left + right) / 2;
+            if(a[mid] == x) {
+                return mid;
+            } else if(a[mid] < x) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        } while(left <= right);
+        return -1;
+    }
+    /* End */
+    /* End */
 
     public static int linearSearch1(int a[], int x) {
         for (int i = 0; i < a.length; ++i) {
