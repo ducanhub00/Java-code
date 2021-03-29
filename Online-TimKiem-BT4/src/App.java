@@ -4,7 +4,7 @@ public class App {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = nhapN(scan);
-        int a[] = nhapMang(n);
+        int a[] = nhapMang(n, scan);
         xuatMang(a);
         System.out.print("Vui long nhap so x can tinh: ");
         int x = Integer.parseInt(scan.nextLine());
@@ -49,7 +49,7 @@ public class App {
                 index = i;
             }
         }
-        System.out.println("Cac phan tu cach xa x = " + x + "nam o cac vi tri: ");
+        System.out.println("Cac phan tu cach xa x = " + x + " nam o cac vi tri: ");
         for(int i = 0; i < a.length; ++i) {
             if(b[i] == b[index]) {
                 System.out.print("(" + i + ", " + a[i] + ") \t");
