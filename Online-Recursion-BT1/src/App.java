@@ -5,7 +5,7 @@ public class App {
         System.out.println("Hello, World!");
     }
 
-    public static nhapN(Scanner scan) {
+    public static int nhapN(Scanner scan) {
         int n;
         System.out.print("Vui long nhap so dia can chuyen: ");
         do {
