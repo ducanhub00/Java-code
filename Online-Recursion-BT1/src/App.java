@@ -17,12 +17,12 @@ public class App {
     }
 
     public static void doi1cot(int n, char a, char b) {
-        System.out.println("Chuyen dia thu " + n + "dia tu cot " + A + " sang cot " + B);
+        System.out.println("Chuyen dia thu " + n + " tu cot " + a + " sang cot " + b);
     }
     
     public static void thapHanoi(int n, char a, char b, char c) {
         if(n == 1) {
-            doi1cot(n, a, c);
+            doi1cot(1, a, c);
         } else {
             thapHanoi(n - 1, a, c, b);
             doi1cot(n, a, c);
