@@ -29,23 +29,19 @@ public class App {
     }
 
     public static void xuatMang(int a[]) {
-        for(int pt : a) {
-            System.out.print(pt + "\t");
+        for(int i = 0; i < a.length; ++i) {
+            System.out.print(a[i] + "\t");
         }
         System.out.println("\n");
-    }
-
-    public static void hoanVi(int a, int b) {
-        a += b;
-        b = a - b;
-        a -= b;
     }
 
     public static int[] interchangeSort(int a[]) {
         for(int i = 0; i < a.length; ++i) {
             for(int j = i + 1; j < a.length; ++j) {
                 if(a[i] > a[j]) {
-                    hoanVi(a[i], a[j]);
+                    int temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
                 }
             }
         }
