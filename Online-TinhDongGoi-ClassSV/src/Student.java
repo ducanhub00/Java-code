@@ -1,3 +1,10 @@
+/* 
+* Muc dich: Quan ly nghiep vu Sinh vien
+* Nguoi tao: Nguyen Duc Anh
+* Ngay tao: 10/4/2021
+* Version: 1.0
+*/
+
 import java.util.jar.Attributes.Name;
 
 public class Student {
