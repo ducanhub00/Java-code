@@ -5,10 +5,11 @@ public class Student {
     private String name;
     private String email;
 
+
     // get, set methods
     // accessor methods(phuong thuc truy xuat cac thuoc tinh/ bien thanh vien)
     public String getName() {
-        return Name;
+        return name;
     }
 
     public String getEmail() {
